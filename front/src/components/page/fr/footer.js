@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './footer.css'
+import GitHubLogo from './GitHub-logo.png'
 
 export default function Footer() {
     const [userData, setUserData] = useState(null);
@@ -59,6 +60,9 @@ export default function Footer() {
                     </>
                 }
                 <p>&copy; 2023 CycloTrack tous droits réservés.</p>
+                <a href='https://github.com/metux-o0/2022-2023-L2G1-velib-based-web-app'>
+                    <img src={GitHubLogo} alt='Logo GitHub' className='github-logo' />
+                </a>
             </div>
         </footer>
     )
